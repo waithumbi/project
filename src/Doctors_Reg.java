@@ -39,7 +39,7 @@ public class Doctors_Reg extends javax.swing.JFrame {
         jPasswordField2 = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("DOCTOR'S REGISTRATION");
 
@@ -100,7 +100,7 @@ public class Doctors_Reg extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(218, 218, 218)
                         .addComponent(jButton1)))
-                .addContainerGap(512, Short.MAX_VALUE))
+                .addContainerGap(483, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,7 +129,7 @@ public class Doctors_Reg extends javax.swing.JFrame {
                     .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(74, 74, 74)
                 .addComponent(jButton1)
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addContainerGap(697, Short.MAX_VALUE))
         );
 
         pack();

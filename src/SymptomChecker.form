@@ -2,7 +2,7 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -37,7 +37,7 @@
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="320" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                       <Component id="jLabel4" max="32767" attributes="0"/>
@@ -56,7 +56,6 @@
                   <Component id="jComboBox5" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBox4" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBox7" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -74,10 +73,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel3" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -116,7 +112,7 @@
                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBox8" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="224" max="32767" attributes="0"/>
+              <EmptySpace pref="637" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -132,49 +128,41 @@
         <Property name="text" type="java.lang.String" value="LIST:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="gerneral symptoms:"/>
+        <Property name="text" type="java.lang.String" value="General Symptoms:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="skin symptoms:"/>
+        <Property name="text" type="java.lang.String" value="Skin Symptoms:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox2">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+          <StringArray count="8">
+            <StringItem index="0" value="Bald spots(hairs)"/>
+            <StringItem index="1" value="Blue coloured lips"/>
+            <StringItem index="2" value="Blue coloured skin"/>
+            <StringItem index="3" value="Brittle hair"/>
+            <StringItem index="4" value="Bruising or discoloration"/>
+            <StringItem index="5" value="Change in hair texture"/>
+            <StringItem index="6" value="Color change"/>
+            <StringItem index="7" value="Cracks at corner of mouth"/>
           </StringArray>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="head area:"/>
+        <Property name="text" type="java.lang.String" value="Head area:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox3">
@@ -194,7 +182,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
-        <Property name="text" type="java.lang.String" value="chest area:"/>
+        <Property name="text" type="java.lang.String" value="Chest area:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox4">
@@ -214,7 +202,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="abdomen:"/>
+        <Property name="text" type="java.lang.String" value="Abdomen:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox5">
@@ -234,20 +222,88 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
-        <Property name="text" type="java.lang.String" value="arms:"/>
+        <Property name="text" type="java.lang.String" value="Arms:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox6">
       <Properties>
+        <Property name="maximumRowCount" type="int" value="150"/>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+          <StringArray count="64">
+            <StringItem index="0" value="Abnormal gait(walking)"/>
+            <StringItem index="1" value="Anxiety"/>
+            <StringItem index="2" value="Binge drinking(alcohol)"/>
+            <StringItem index="3" value="Binge eating"/>
+            <StringItem index="4" value="Bleeding"/>
+            <StringItem index="5" value="Body aches or pains"/>
+            <StringItem index="6" value="Bruising or discoloration"/>
+            <StringItem index="7" value="Chills"/>
+            <StringItem index="8" value="Cough"/>
+            <StringItem index="9" value="Decreased appetite"/>
+            <StringItem index="10" value="Decreased sweating"/>
+            <StringItem index="11" value="Difficulty breathing"/>
+            <StringItem index="12" value="Difficulty relaxing muscles after contracting them"/>
+            <StringItem index="13" value="Difficulty standing"/>
+            <StringItem index="14" value="Difficulty swallowing"/>
+            <StringItem index="15" value="Difficulty walking"/>
+            <StringItem index="16" value="Distorted body image"/>
+            <StringItem index="17" value="Dizziness"/>
+            <StringItem index="18" value="Drinking excessive fluids"/>
+            <StringItem index="19" value="Dry skin"/>
+            <StringItem index="20" value="Easy bleeding"/>
+            <StringItem index="21" value="Easy bruising"/>
+            <StringItem index="22" value="Excessive body hairy growth"/>
+            <StringItem index="23" value="Excessive crying"/>
+            <StringItem index="24" value="Excessive exercising"/>
+            <StringItem index="25" value="Excessive hair growth(female)"/>
+            <StringItem index="26" value="Excessive salty sweat"/>
+            <StringItem index="27" value="Fatigue"/>
+            <StringItem index="28" value="Fearful"/>
+            <StringItem index="29" value="Feeling faint"/>
+            <StringItem index="30" value="Fever"/>
+            <StringItem index="31" value="Flaking Skin"/>
+            <StringItem index="32" value="Flushed skin"/>
+            <StringItem index="33" value="Food cravings"/>
+            <StringItem index="34" value="High Blood pressure"/>
+            <StringItem index="35" value="Hperactive behaviour"/>
+            <StringItem index="36" value="Impaired judgement"/>
+            <StringItem index="37" value="Increased sensitivity to cold"/>
+            <StringItem index="38" value="Increased sensitivity to cold"/>
+            <StringItem index="39" value="Increased sensitivity to heat"/>
+            <StringItem index="40" value="Increased thirst"/>
+            <StringItem index="41" value="Itching or burning"/>
+            <StringItem index="42" value="Joint aches"/>
+            <StringItem index="43" value="Low blood pressure"/>
+            <StringItem index="44" value="Muscle cramps or spasms(painful)"/>
+            <StringItem index="45" value="Muscle stiffness(rigidity)"/>
+            <StringItem index="46" value="Muscle weakness"/>
+            <StringItem index="47" value="Night sweats"/>
+            <StringItem index="48" value="Overweight"/>
+            <StringItem index="49" value="Pain or discormfort"/>
+            <StringItem index="50" value="Pale skin"/>
+            <StringItem index="51" value="Palpitations(fluttering in chest)"/>
+            <StringItem index="52" value="Poor personal health"/>
+            <StringItem index="53" value="Prolonged bleeding"/>
+            <StringItem index="54" value="Restrictive dieting"/>
+            <StringItem index="55" value="Seizures(uncontrollable jerking of limbs)"/>
+            <StringItem index="56" value="Shaking chills(rigors)"/>
+            <StringItem index="57" value="Skin peeling cracking or scaling"/>
+            <StringItem index="58" value="Stiffness or decreased movement"/>
+            <StringItem index="59" value="Tires quickly"/>
+            <StringItem index="60" value="Trembling"/>
+            <StringItem index="61" value="Weight gain"/>
+            <StringItem index="62" value="Weight loss(unintentional)"/>
+            <StringItem index="63" value="Wheezing"/>
           </StringArray>
         </Property>
+        <Property name="editor" type="javax.swing.ComboBoxEditor" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="null"/>
+        </Property>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox6ActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
@@ -269,7 +325,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
-        <Property name="text" type="java.lang.String" value="legs:"/>
+        <Property name="text" type="java.lang.String" value="Legs:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox8">
